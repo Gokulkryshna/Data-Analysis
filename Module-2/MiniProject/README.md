@@ -168,7 +168,7 @@ Customer-Shopping-Behaviour-Analysis/
 
 *Folder and file names are suggested. Adjust them to match the files uploaded to your repository.*
 
-## 🚀 Conclusion
+## Conclusion
 
 This project demonstrates how data cleaning, analysis, and visualization can be combined to understand customer shopping behaviour.
 
