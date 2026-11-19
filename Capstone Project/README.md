@@ -1,52 +1,77 @@
+# Healthcare Dataset Analysis
 
-# 🏥 Healthcare Clinical Data Analysis
+## Project Overview
 
-## 📊 Phase 1 – Data Understanding
+This project focuses on cleaning and analyzing a healthcare clinical dataset using Python. The objective is to explore disease patterns, clinical measurements, disease severity, procedure complexity, and hospital-acquired infections through Exploratory Data Analysis (EDA).
 
-### 1. Objective
+## Dataset Overview
 
-The objective of this phase is to understand the structure, size, features, and initial characteristics of the healthcare clinical dataset before performing data cleaning and detailed analysis.
+- **Total Records:** 13,214
+- **Total Columns:** 22
+- **Domain:** Healthcare
+- **Data Type:** Structured tabular data
 
-### 2. Dataset Overview
+The dataset includes patient encounter details, diagnosis information, clinical measurements, medical procedures, and hospital-acquired infection records.
 
-The dataset contains clinical records related to patients, diseases, severity levels, and hospital-acquired infections.
+## Technologies & Libraries
 
-| Metric | Value |
-|---|---:|
-| Total Records | 13,214 |
-| Total Columns | 22 |
-| Unique Patients | 5,000 |
-| Duplicate Rows | 0 |
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Jupyter Notebook / VS Code
 
-### 3. Initial Observations
+## Project Workflow
 
-#### 🦠 Disease Category
+### 1. Data Cleaning
+
+- Identified missing values.
+- Checked for duplicate records.
+- Handled missing numerical values using median imputation.
+- Replaced missing categorical values appropriately.
+- Corrected data types.
+- Exported the cleaned dataset.
+
+### 2. Exploratory Data Analysis (EDA)
+
+- Descriptive statistical analysis.
+- Disease category distribution.
+- Disease severity distribution.
+- Clinical measurement analysis.
+- Hospital-acquired infection analysis.
+- Correlation analysis.
+- Disease category vs. severity analysis.
+- Disease category vs. infection analysis.
+- Procedure complexity vs. disease severity analysis.
+
+### 3. Data Visualization
+
+Used histograms, box plots, bar charts, pie charts, and correlation heatmaps to visualize patterns and relationships in the dataset.
+
+## Key Findings
 
 - Respiratory diseases had the highest number of records (2,498).
-- Cardiovascular diseases were the second-highest category (2,057).
-- Obstetrics had the lowest number of records (302).
+- Moderate disease severity was the most frequently recorded category (5,104 records).
+- Approximately 2.74% of records were associated with hospital-acquired infections.
+- Systolic and diastolic blood pressure showed a strong positive correlation (0.95).
+- Infectious diseases had the highest proportion of Critical cases (40.54%).
+- Trauma had the highest hospital-acquired infection proportion (6.92%).
+- High-complexity procedures had the highest proportion of Severe cases (38.97%).
 
-#### ⚕️ Disease Severity
+## Project Files
 
-- Moderate cases were the most frequent (5,104).
-- Critical cases were the least frequent (1,493).
+- `Clinical_Dataset_Cleaned.csv` – Cleaned healthcare dataset.
+- `Healthcare_Dataset_Analysis_Report.md` – Detailed analysis report.
+- Python analysis file – Data cleaning and exploratory analysis code.
 
-#### 🏥 Hospital-Acquired Infections
+## Conclusion
 
-- 362 records were marked as hospital-acquired infections.
-- 12,852 records were marked as having no hospital-acquired infection.
-- Approximately 2.74% of records had a hospital-acquired infection.
+This project provided practical experience in data preprocessing, handling missing values, statistical analysis, exploratory data analysis, and data visualization using Python.
 
-### 4. Initial Data Quality Observations
+The analysis helped identify patterns and relationships among healthcare variables and demonstrated the application of Python libraries in working with structured datasets.
 
-- No duplicate rows were identified.
-- Missing values were present in several columns, including laboratory measurements and secondary diagnosis codes.
-- `procedure_complexity` had a relatively high proportion of missing values.
-- Further data cleaning was required before conducting detailed analysis.
+---
 
-### 5. Phase 1 Conclusion
-
-The initial exploration provided an understanding of the dataset's structure, disease distribution, severity levels, and data quality issues.
-
-This phase helped identify missing values and other potential data quality concerns. Based on these observations, the dataset was ready to proceed to **Phase 2 – Data Cleaning and Preparation**.
-
+**Project Domain:** Data Analytics  
+**Language:** Python
